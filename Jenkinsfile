@@ -2,7 +2,7 @@ node {
     checkout scm
     
     sh 'rm  ~/.dockercfg || true'
-    sh 'rm ~/.docker/config.json || true'v
+    sh 'rm ~/.docker/config.json || true'
     
     docker.withRegistry('https://192.168.17.170:5001', 'dockeruser') {
 
